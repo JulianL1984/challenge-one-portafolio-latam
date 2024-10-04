@@ -1,8 +1,7 @@
-/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
-*/
+
 :root {
     --color-de-fondo: #F5F5F5;
-    --color-de-fondo-menu: #ffffff;
+    --color-de-fondo-menu: #d9d2d2;
     --color-de-link: #000000;
 }
 
@@ -33,10 +32,6 @@ a {
     background-color: var(--color-de-fondo-menu);
 }
 
-.cabecera__logo {
-    max-width: 80px; /* Ajuste para pantallas pequeñas */
-}
-
 .cabecera__titulo {
     font-size: 1.2rem;
     text-align: center;
@@ -51,7 +46,16 @@ a {
 }
 /* ------------------------------ Sección Presentación ------------------------------*/
 
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:var(--color-de-fondo);
+}
 
+.presentacion__foto{
+    width: 200px;
+}
 /* ------------------------------ Sección sobre mí ----------------------------------*/
 
 
