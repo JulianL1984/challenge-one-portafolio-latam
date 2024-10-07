@@ -293,12 +293,17 @@ a {
     }
 
     .formacion__lista {
-        display: flex;
         flex-direction: row;
+        text-size-adjust: auto;
         align-items: center; 
         justify-content: center; 
-        gap: 0.5rem; 
+        padding: 1rem;
+        gap: 1.5rem;
     }
+
+    .formacion__icono {
+        width: 140px; 
+        height: 140px;
 }
 
 /* Pantallas grandes */
