@@ -3,6 +3,7 @@
     --color-de-fondo-menu: #000000;
     --color-de-link: #1100fe;
     --color-de-cabecera:#ffffff;
+    --sombra: 10px 10px 16px rgba(4, 0, 255, 0.1); /* Nueva variable para sombra */
 }
 
 body {
@@ -32,12 +33,12 @@ a {
     padding: 1rem;
     background-color: var(--color-de-fondo-menu);
     justify-content: space-between;
-    color:var(--color-de-cabecera);
+    color: var(--color-de-cabecera);
 }
 
 .cabecera__titulo {
     font-size: 1.2rem;
-    text-align:left;
+    text-align: left;
 }
 
 .navegacion__lista {
@@ -66,7 +67,7 @@ a {
     width: auto; 
     max-width: 200px;
     border-radius: 40px;
-    box-shadow: 10px 10px 16px rgba(4, 0, 255, 0.1);
+    box-shadow: var(--sombra); /* Usando la variable para sombra */
     height: auto;
     margin-bottom: 2rem;
 }
@@ -116,7 +117,7 @@ a {
     width: 100%;
     max-width: 100px;
     height: auto;
-    box-shadow: 10px 10px 16px rgba(4, 0, 255, 0.1);
+    box-shadow: var(--sombra); /* Usando la variable para sombra */
 }
 
 .habilidades__titulo {
@@ -145,7 +146,7 @@ a {
     width: 100%;
     max-width: 100px;
     height: auto;
-    box-shadow: 10px 10px 16px rgba(4, 0, 255, 0.1);
+    box-shadow: var(--sombra); /* Usando la variable para sombra */
 }
 
 .aficiones__titulo {
@@ -175,7 +176,7 @@ a {
     max-width: 100px;
     height: auto;
     margin-bottom: 0.5rem;
-    box-shadow: 10px 10px 16px rgba(4, 0, 255, 0.1);
+    box-shadow: var(--sombra); /* Usando la variable para sombra */
 }
 
 .redes {
@@ -209,9 +210,8 @@ a {
 .formacion__icono {
     width: 200px;
     height: 200px;
-    box-shadow: 10px 10px 16px rgba(4, 0, 255, 0.1);
+    box-shadow: var(--sombra); /* Usando la variable para sombra */
 }
-
 
 /* ------------------------------ Sección de Proyectos --------------------------------*/
 .proyectos {
@@ -247,7 +247,7 @@ a {
     margin-bottom: 1rem;
     padding: 0.5rem;
     box-sizing: border-box;
-    box-shadow: 10px 10px 16px rgba(4, 0, 255, 0.1);
+    box-shadow: var(--sombra); /* Usando la variable para sombra */
 }
 
 .contacto__boton {
@@ -256,8 +256,7 @@ a {
     color: white;
     border: none;
     cursor: pointer;
-    box-shadow: 10px 10px 16px rgba(4, 0, 255, 0.1);
-    
+    box-shadow: var(--sombra); /* Usando la variable para sombra */
 }
 
 .contacto__titulo {
@@ -270,14 +269,15 @@ a {
 /* Pantallas menores a 768px: todo en columnas centradas */
 @media (max-width: 768px) {
     .cabecera {
-        flex-direction: center;
-        font-size:18px;
-        gap:1%;
+        flex-direction: column; /* Corregido 'center' a 'column' */
+        font-size: 18px;
+        gap: 1%;
     }
+
     .navegacion__lista {
         display: none;
     }
-    }
+
     .presentacion, .sobre-mi, .proyectos, .contacto__formulario {
         flex-direction: column;
         align-items: center;
@@ -285,7 +285,7 @@ a {
         text-align: center;
         padding: 1rem;
     }
-   
+
     .presentacion__contenedor, .sobre-mi__contenedor, .proyectos__contenedor {
         display: flex;
         flex-direction: column;
@@ -294,18 +294,18 @@ a {
     }
 
     .formacion__lista {
-        display: inline;
-        flex-direction: row;
-        text-size-adjust: auto;
+        display: flex;
+        flex-direction: column;
         align-items: center; 
-        justify-content: center; 
-        padding: 1rem;
+        justify-content: center;
         gap: 1rem;
+        padding: 1rem;
     }
 
     .formacion__icono {
-        width: 140px; 
-        height: 140px;
+        max-width: 140px; 
+        max-height: 140px;
+    }
 }
 
 /* Pantallas grandes */
