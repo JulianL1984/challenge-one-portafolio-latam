@@ -272,7 +272,7 @@ a {
 @media (max-width: 768px) {
     .cabecera {
         flex-direction: column; 
-        font-weight: 100%;
+        font-weight: 100;
         gap: 2%;
     }
 
