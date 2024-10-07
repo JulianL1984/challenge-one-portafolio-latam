@@ -185,25 +185,25 @@ a {
 
 /* ------------------------------ Sección de Formación --------------------------------*/
 .formacion__titulo {
-    text-align: center; /* Centrar el título de la sección */
+    text-align: center; 
     margin-bottom: 1rem;
 }
 
 .formacion__lista {
     display: flex;
     flex-direction: row;
-    align-items: center; /* Centrar horizontalmente los elementos de la lista */
-    justify-content: center; /* Centrar verticalmente si es necesario */
-    gap: 5rem; /* Espacio entre los elementos */
+    align-items: center; 
+    justify-content: center; 
+    gap: 5rem; 
     padding: 1rem;
 }
 
 .formacion__elemento {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrar cada elemento */
-    text-align: center; /* Asegura que el texto dentro del elemento esté centrado */
-    max-width: 200px; /* Ajusta el ancho máximo del elemento si es necesario */
+    align-items: center; 
+    text-align: center; 
+    max-width: 200px; 
 }
 
 .formacion__icono {
@@ -289,6 +289,14 @@ a {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+    .formacion__lista {
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+        justify-content: center; 
+        gap: 1rem; 
     }
 }
 
