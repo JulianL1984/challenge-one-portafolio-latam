@@ -272,8 +272,8 @@ a {
 @media (max-width: 768px) {
     .cabecera {
         flex-direction: column; 
-        font-size: auto;
-        gap: 1%;
+        font-weight: 100%;
+        gap: 2%;
     }
 
     .navegacion__lista {
@@ -313,10 +313,10 @@ a {
 /* Pantallas grandes */
 @media (min-width: 1024px) {
     .cabecera__titulo {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .navegacion__elemento a {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 }
