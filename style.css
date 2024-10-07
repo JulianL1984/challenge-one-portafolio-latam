@@ -270,8 +270,8 @@ a {
 /* Pantallas menores a 768px: todo en columnas centradas */
 @media (max-width: 768px) {
     .cabecera {
-        flex-direction: column;
-        font-size:16px;
+        flex-direction: center;
+        font-size:18px;
         gap:1%;
     }
     .navegacion__lista {
@@ -294,12 +294,13 @@ a {
     }
 
     .formacion__lista {
+        display: inline;
         flex-direction: row;
         text-size-adjust: auto;
         align-items: center; 
         justify-content: center; 
         padding: 1rem;
-        gap: 1.5rem;
+        gap: 1rem;
     }
 
     .formacion__icono {
