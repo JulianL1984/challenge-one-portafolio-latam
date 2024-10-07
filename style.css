@@ -281,7 +281,7 @@ a {
         align-items: center;
         justify-content: center;
         text-align: center;
-        padding: 2rem;
+        padding: 1rem;
     }
    
     .presentacion__contenedor, .sobre-mi__contenedor, .proyectos__contenedor {
@@ -296,14 +296,14 @@ a {
         flex-direction: row;
         align-items: center; 
         justify-content: center; 
-        gap: 1rem; 
+        gap: 0.5rem; 
     }
 }
 
 /* Pantallas grandes */
 @media (min-width: 1024px) {
     .cabecera__titulo {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .navegacion__elemento a {
